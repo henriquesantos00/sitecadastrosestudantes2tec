@@ -1,9 +1,11 @@
+/* Estilo geral da página */
 body {
     background-color: #b1defc;
     font-family: sans-serif;
     display: flex;
     justify-content: center;
     padding: 50px;
+    margin: 0;
 }
 
 .container {
@@ -11,13 +13,20 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 100%;
+    max-width: 400px;
 }
 
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Estilo do formulário */
 form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
 }
 
 input,
@@ -25,6 +34,13 @@ button {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-size: 16px;
+}
+
+input:focus,
+button:focus {
+    outline: none;
+    border-color: #4CAF50;
 }
 
 button {
@@ -32,23 +48,41 @@ button {
     color: white;
     border: none;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 button:hover {
     background-color: #45a049;
 }
 
+/* Estilo da lista de alunos */
 ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 li {
     background-color: #f9f9f9;
     margin: 5px 0;
-    padding: 8px;
+    padding: 12px;
     border-radius: 4px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+li strong {
+    color: #333;
+}
+
+li button {
+    background-color: #f44336;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+li button:hover {
+    background-color: #d32f2f;
 }

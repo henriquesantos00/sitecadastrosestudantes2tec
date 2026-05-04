@@ -12,9 +12,10 @@
     <div class="container">
         <h1>Cadastro de Alunos</h1>
 
+        <!-- Formulário de Cadastro -->
         <form id="cadastroForm">
             <input type="text" id="nomeAluno" placeholder="Nome do Aluno" required>
-            <input type="text" id="idadeAluno" placeholder="Idade do Aluno" required>
+            <input type="number" id="idadeAluno" placeholder="Idade do Aluno" required>
             <input type="text" id="cgmAluno" placeholder="CGM do Aluno" required>
             <input type="email" id="emailAluno" placeholder="Email do Aluno" required>
             <button type="submit" id="btnSalvar">Cadastrar</button>
@@ -25,6 +26,7 @@
         <h2>Lista de Inscritos</h2>
         <ul id="listaAlunos"></ul>
     </div>
+
     <script src="script.js"></script>
 </body>
 
